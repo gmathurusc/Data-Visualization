@@ -1,0 +1,35 @@
+.center-block {
+	width: 1200px;
+}
+
+h1, h3 {
+	text-shadow: 0 0 1px rgba(0,0,0,0.2);
+	letter-spacing: .5px;
+}
+h1 {
+	font-size: 18px;
+}
+h3 {
+	font-size: 16px;
+}
+
+svg {
+	width: 100%;
+}
+
+path {
+	stroke: steelblue;
+	stroke-width: 0.25px;
+	fill: #eee;
+}
+
+circle {
+	fill-opacity: .7;
+}
+
+.map-key {
+	margin-top: -250px;
+}
+.map-key-button {
+	border: solid black 1px; margin-bottom: 2px; color:white;
+}

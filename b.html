@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visualize how companies are changing over time based on job postings</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="global.css">
+	<style>
+		.radio-inline {
+			margin-right: 30px;
+		}
+		.map-key {
+			margin-left: 200px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center-block">
+		<header class="page-header">
+			<h1 class="text-center">Visualize how companies are changing over time based on job postings</h1>
+		</header>
+		<div class="text-center" style="margin-bottom: 15px">
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-10-01T00:00:00Z" data-end="2012-11-01T00:00:00Z">
+				<strong>Oct 2012</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-11-01T00:00:00Z" data-end="2012-12-01T00:00:00Z">
+				<strong>Nov 2012</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-12-01T00:00:00Z" data-end="2013-01-01T00:00:00Z">
+				<strong>Dec 2012</strong>
+			</label>
+		</div>
+		<svg height="500"></svg>
+		<div class="btn-group-vertical map-key"></div>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="d3.js"></script>
+	<script src="topojson.v1.min.js"></script>
+	<script src="b.js"></script>
+</body>
+</html>

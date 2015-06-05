@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Plot and analyze the seasonal trends of different job categories</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="global.css">
+	<style>
+		.radio-inline {
+			margin-right: 30px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center-block">
+		<header class="page-header">
+			<h1 class="text-center">Plot and analyze the seasonal trends of different job categories</h1>
+		</header>
+		<div class="text-center">
+			<label class="radio-inline">
+				<input type="radio" name="jobtype" value="Tiempo Completo">
+				<strong>Tiempo Completo</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="jobtype" value="Medio Tiempo">
+				<strong>Medio Tiempo</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="jobtype" value="Por Horas">
+				<strong>Por Horas</strong>
+			</label>
+		</div>
+		<div class="col-xs-3">
+			<h3 class="text-center">Oct 2012 - Dec 2012</h3>
+			<svg class="first" height="450"></svg>
+		</div>
+		<div class="col-xs-3">
+			<h3 class="text-center">Jan 2013 - Mar 2013</h3>
+			<svg class="second" height="450"></svg>
+		</div>
+		<div class="col-xs-3">
+			<h3 class="text-center">Apr 2013 - Jun 2013</h3>
+			<svg class="third" height="450"></svg>
+		</div>
+		<div class="col-xs-3">
+			<h3 class="text-center">Jul 2013 - Sep 2013</h3>
+			<svg class="fourth" height="450"></svg>
+		</div>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="d3.js"></script>
+	<script src="topojson.v1.min.js"></script>
+	<script src="d.js"></script>
+</body>
+</html>

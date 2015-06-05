@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Visualize job postings geospatially and temporally by company and job type</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="global.css">
+	<style>
+		.radio-inline {
+			margin-right: 20px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="center-block">
+		<header class="page-header">
+			<h1 class="text-center">Visualize job postings geospatially and temporally by company and job type</h1>
+		</header>
+		<div class="text-center">
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-10-01T00:00:00Z" data-end="2012-11-01T00:00:00Z">
+				<strong>Oct 2012</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-11-01T00:00:00Z" data-end="2012-12-01T00:00:00Z">
+				<strong>Nov 2012</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2012-12-01T00:00:00Z" data-end="2013-01-01T00:00:00Z">
+				<strong>Dec 2012</strong>
+			</label>
+			<label class="radio-inline">
+				<input type="radio" name="period" data-start="2013-01-01T00:00:00Z" data-end="2013-02-01T00:00:00Z">
+				<strong>Jan 2013</strong>
+			</label>
+		</div>
+		<div class="col-xs-6">
+			<h3 class="text-center">By company</h3>
+			<svg class="company" height="450"></svg>
+			<div class="btn-group-vertical map-key company-keys"></div>
+		</div>
+		<div class="col-xs-6">
+			<h3 class="text-center">By job type</h3>
+			<svg class="jobtype" height="450"></svg>
+			<div class="btn-group-vertical map-key jobtype-keys"></div>
+		</div>
+	</div>
+
+	<script src="jquery.js"></script>
+	<script src="bootstrap.js"></script>
+	<script src="d3.js"></script>
+	<script src="topojson.v1.min.js"></script>
+	<script src="a.js"></script>
+</body>
+</html>
